@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <style>
+    .pic 
+    {
+     display: block;
+     margin-top: 50px;
+     margin-left: auto;
+     margin-right: auto;
+    
+    }
+   </style>
+    <img class="pic" width="200" height="200" src="images/failure.jpg" alt="failure img" >
+    <div style="text-align: center;" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>Ah shit here we go again</h1>
+          <p>Looks like there was a problem signing you up. Please try again </p>
+        </div>
+        <!-- this will post data from the form to failure route -->
+        <form action="/failure" method="post"> 
+            <button class="btn btn-lg btn-warning" type="submit" name="button">Try Again</button>
+        </form>
+        
+      </div>
+</body>
+</html>
